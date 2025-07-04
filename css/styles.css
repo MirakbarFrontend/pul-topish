@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #efefef;
+}
+
+.container {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.lesson {
+	padding-bottom: 60px;
+	position: relative;
+	background-color: #efefef;
+	background-image: url(../img/person-img.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.lesson__info {
+}
+.lesson__top {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	margin-bottom: 41px;
+	gap: 39px;
+}
+.lesson__top-left {
+	max-width: 253px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 4px 6.6px 0px #00000026;
+	padding: 22px 58px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: center;
+}
+.lesson__top-text {
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+.lesson__top-left-title {
+	font-weight: 800;
+	font-size: 36px;
+	color: #000;
+}
+.lesson__top-right {
+	max-width: 253px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 4px 6.6px 0px #00000026;
+	padding: 22px 58px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: center;
+}
+.lesson__top-right-title {
+	font-weight: 800;
+	font-size: 36px;
+	color: #241ebf;
+}
+.lesson__text {
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.lesson__text span {
+	color: #ff0000;
+}
+.lesson__title {
+	font-weight: 700;
+	font-size: 66px;
+	line-height: 1;
+	margin-bottom: 34px;
+}
+.lesson__title span {
+	color: #241ebf;
+}
+.lesson__text2 {
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 23px;
+}
+.lesson__list {
+	margin-bottom: 49px;
+}
+.lesson__list-item {
+	display: flex;
+	align-items: center;
+}
+.lesson__list-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+.lesson__list-img {
+	width: 69px;
+	height: 69px;
+	margin-right: 4px;
+}
+.lesson__list-text {
+	max-width: 521px;
+	width: 100%;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 1.1px;
+}
+.lesson__list-text span {
+	color: #241ebf;
+}
+.lesson__btn {
+	max-width: 578px;
+	width: 100%;
+	padding: 22px;
+	background-color: #241ebf;
+	box-shadow: 0px 4px 4px 0px #241ebf63 inset;
+	font-weight: 700;
+	font-size: 44px;
+	border: none;
+	color: #fff;
+	border-radius: 50px;
+	margin-bottom: 18px;
+}
+.lesson__bottom {
+	border: 1px solid #bcbcbc;
+	background-color: #ffffff;
+	max-width: 578px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	padding: 8px 24px;
+}
+.lesson__bottom-img {
+}
+.lesson__bottom-text {
+}
+.lesson__img {
+	width: 100px;
+}
+
+/* MODAL OVERLAY - oqroq va xiralashtirilgan */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal.hidden {
+	display: none;
+}
+
+.modal__overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.4); /* Oq, yarim shaffof */
+	z-index: 1;
+}
+
+/* MODAL OYNA */
+.modal__box {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	padding: 35px 25px;
+	border-radius: 20px;
+	max-width: 400px;
+	width: 90%;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* CLOSE BUTTON */
+.modal__close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
+}
+
+/* TITLE */
+.modal__title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	color: #111;
+}
+
+/* INPUTLAR */
+.modal__input {
+	width: 100%;
+	padding: 14px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	outline: none;
+}
+
+/* YUBORISH BUTTON */
+.modal__submit {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	background-color: #2200ff;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
