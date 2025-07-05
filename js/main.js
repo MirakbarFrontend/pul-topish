@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const modal = document.getElementById('modal');
-	const openBtn = document.querySelector('.lesson__btn');
+	const openBtns = document.querySelectorAll('.open-modal-btn');
 	const closeBtn = document.getElementById('modalClose');
 	const overlay = document.querySelector('.modal__overlay');
+	const submitBtn = document.getElementById('submitBtn');
 
-	openBtn.addEventListener('click', function () {
-		modal.classList.remove('hidden');
+	// Har ikkala tugma modalni ochadi
+	openBtns.forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			modal.classList.remove('hidden');
+		});
 	});
 
+	// Modalni yopish
 	closeBtn.addEventListener('click', function () {
 		modal.classList.add('hidden');
 	});
@@ -16,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		modal.classList.add('hidden');
 	});
 
-	document.getElementById('submitBtn').addEventListener('click', function () {
+	// Formani tekshirish va redirect
+	submitBtn.addEventListener('click', function () {
 		const name = document.getElementById('ism').value.trim();
 		const phone = document.getElementById('tel').value.trim();
 

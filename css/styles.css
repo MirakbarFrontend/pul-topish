@@ -37,6 +37,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
+.lesson__container {
+}
 
 .lesson__info {
 }
@@ -132,6 +134,7 @@ body {
 	color: #241ebf;
 }
 .lesson__btn {
+	white-space: nowrap;
 	max-width: 578px;
 	width: 100%;
 	padding: 22px;
@@ -243,4 +246,115 @@ body {
 	border-radius: 10px;
 	font-weight: bold;
 	cursor: pointer;
+}
+.responsive-person {
+	display: none;
+}
+
+.block {
+	display: none;
+	white-space: nowrap;
+}
+.lesson__bottom-none {
+	display: none;
+}
+@media screen and (max-width: 1900px) {
+	.lesson {
+		background-size: 60%;
+	}
+}
+
+@media (max-width: 900px) {
+	.lesson {
+		background-image: none !important;
+		padding-top: 0;
+	}
+	.lesson__top {
+	}
+	.lesson__top-left {
+		max-width: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.lesson__top-right {
+		display: none;
+	}
+	.lesson__top-left-title {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.lesson__text {
+		text-align: center;
+		margin-bottom: 0;
+		padding-top: 30px;
+	}
+	.lesson__title {
+		margin: 30px auto 60px;
+		text-align: center;
+		font-size: 48px;
+		line-height: 42px;
+	}
+	.block {
+		display: block;
+		width: 100%;
+		max-width: none;
+		padding: 23.5px 30px;
+		justify-content: center;
+		margin-bottom: 20px;
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: 0.9;
+		font-weight: 700;
+		background-color: #2200ff;
+		border-radius: 50px;
+		color: #fff;
+		border: none;
+		max-width: 740px;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+	.responsive-person {
+		display: block;
+		margin: auto;
+		width: 396px;
+		height: 418px;
+	}
+	.lesson__bottom-none {
+		display: block;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.lesson__text2 {
+		font-size: 20px;
+		line-height: 22px;
+		padding: 50px 0 20px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.lesson__list {
+		max-width: none;
+		width: 100%;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.lesson__item {
+		line-height: 16px;
+		align-items: center;
+	}
+	.lesson__list-text {
+		font-size: 16px;
+	}
+	.lesson__btn {
+		display: none;
+	}
+	.lesson__bottom {
+		display: none;
+	}
+	.modal {
+	}
 }
