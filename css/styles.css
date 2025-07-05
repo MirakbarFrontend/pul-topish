@@ -99,6 +99,7 @@ body {
 	font-size: 66px;
 	line-height: 1;
 	margin-bottom: 34px;
+	text-transform: uppercase;
 }
 .lesson__title span {
 	color: #241ebf;
@@ -160,8 +161,7 @@ body {
 }
 .lesson__bottom-img {
 }
-.lesson__bottom-text {
-}
+
 .lesson__img {
 	width: 100px;
 }
@@ -274,6 +274,9 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 10px;
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
 	}
 	.lesson__top-right {
 		display: none;
@@ -281,37 +284,48 @@ body {
 	.lesson__top-left-title {
 		font-size: 24px;
 		line-height: 36px;
+		margin-right: 10px;
+	}
+	.lesson__top-text {
+		margin-left: 10px;
+		font-size: 16px;
+		font-weight: 300;
 	}
 	.lesson__text {
 		text-align: center;
 		margin-bottom: 0;
-		padding-top: 30px;
+		font-size: 20px;
+		font-weight: 100;
 	}
 	.lesson__title {
 		margin: 30px auto 60px;
 		text-align: center;
-		font-size: 48px;
-		line-height: 42px;
+		font-size: 32px;
 	}
 	.block {
-		display: block;
+		max-width: 578px;
 		width: 100%;
-		max-width: none;
 		padding: 23.5px 30px;
-		justify-content: center;
-		margin-bottom: 20px;
-		font-size: 36px;
-		line-height: 42px;
-		letter-spacing: 0.9;
-		font-weight: 700;
-		background-color: #2200ff;
+		background: #241ebf;
 		border-radius: 50px;
-		color: #fff;
 		border: none;
-		max-width: 740px;
-		width: 100%;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: auto;
+		transition: transform 0.2s ease;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
 		margin: auto;
-		margin-bottom: 25px;
 	}
 	.responsive-person {
 		display: block;
@@ -325,11 +339,26 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border: 1px solid #bcbcbc;
+		background-color: #ffffff;
+		max-width: 578px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 8px 24px;
+		margin-top: 25px;
+	}
+	.lesson__bottom-text {
+		font-size: 22px;
+		line-height: 1.8;
+		margin-left: 10px;
+		max-width: none;
 	}
 	.lesson__text2 {
 		font-size: 20px;
 		line-height: 22px;
-		padding: 50px 0 20px;
 		width: 100%;
 		text-align: center;
 		margin-bottom: 0;
@@ -341,11 +370,11 @@ body {
 		padding-bottom: 0;
 	}
 	.lesson__item {
-		line-height: 16px;
 		align-items: center;
+		gap: 12px;
 	}
 	.lesson__list-text {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.lesson__btn {
 		display: none;
@@ -356,38 +385,57 @@ body {
 }
 
 @media (max-width: 500px) {
+	.lesson__top-left {
+		padding: 4px 20px;
+		border-bottom-left-radius: 35px;
+		border-bottom-right-radius: 35px;
+	}
 	.lesson__top-left-title {
-		font-size: 20px;
+		font-size: 22px;
+	}
+	.lesson__top-text {
+		font-size: 18px;
+		font-weight: 100;
 	}
 	.lesson__text {
-		padding-top: 26px;
+		font-size: 16px;
+		font-weight: 100;
 	}
 	.lesson__title {
-		font-size: 40px;
-		margin-bottom: 0;
+		max-width: 314px;
+		font-size: 24px;
+		line-height: -1.2;
+		letter-spacing: -1px;
 	}
 	.block {
-		padding: 23.5px 30px;
-		font-size: 28px;
-		max-width: 540px;
-		margin-bottom: 5px;
+		max-width: 425px;
+		padding: 20px 30px;
+
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: -1px;
+		margin-bottom: 25px;
 	}
 	.responsive-person {
-		width: 306px;
-		height: 328px;
+		width: 286px;
+		height: 308px;
 	}
+
 	.lesson__bottom-none {
-		display: block;
-		margin: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		max-width: 309px;
+		padding: 8px 11px 8px 24px;
+		margin-bottom: 18px;
 	}
+	.lesson__bottom-img {
+		width: 50px;
+		height: 38px;
+	}
+	.lesson__bottom-text {
+		font-size: 11px;
+	}
+
 	.lesson__text2 {
 		font-size: 20px;
-		line-height: 22px;
-		padding: 50px 0 20px;
-		width: 100%;
 		text-align: center;
 		margin-bottom: 0;
 	}
@@ -397,12 +445,18 @@ body {
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
+	.lesson__list-img {
+		width: 52px;
+		height: 52px;
+	}
 	.lesson__item {
 		line-height: 16px;
 		align-items: center;
 	}
 	.lesson__list-text {
 		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 100;
 	}
 	.lesson__btn {
 		display: none;
