@@ -269,8 +269,6 @@ body {
 		background-image: none !important;
 		padding-top: 0;
 	}
-	.lesson__top {
-	}
 	.lesson__top-left {
 		max-width: none;
 		display: flex;
@@ -355,6 +353,61 @@ body {
 	.lesson__bottom {
 		display: none;
 	}
-	.modal {
+}
+
+@media (max-width: 500px) {
+	.lesson__top-left-title {
+		font-size: 20px;
+	}
+	.lesson__text {
+		padding-top: 26px;
+	}
+	.lesson__title {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	.block {
+		padding: 23.5px 30px;
+		font-size: 28px;
+		max-width: 540px;
+		margin-bottom: 5px;
+	}
+	.responsive-person {
+		width: 306px;
+		height: 328px;
+	}
+	.lesson__bottom-none {
+		display: block;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.lesson__text2 {
+		font-size: 20px;
+		line-height: 22px;
+		padding: 50px 0 20px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.lesson__list {
+		max-width: none;
+		width: 100%;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.lesson__item {
+		line-height: 16px;
+		align-items: center;
+	}
+	.lesson__list-text {
+		font-size: 16px;
+	}
+	.lesson__btn {
+		display: none;
+	}
+	.lesson__bottom {
+		display: none;
 	}
 }
