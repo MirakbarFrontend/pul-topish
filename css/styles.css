@@ -404,6 +404,7 @@ body {
 	.lesson__title {
 		max-width: 314px;
 		font-size: 24px;
+		margin-bottom: 15px;
 		line-height: -1.2;
 		letter-spacing: -1px;
 	}
